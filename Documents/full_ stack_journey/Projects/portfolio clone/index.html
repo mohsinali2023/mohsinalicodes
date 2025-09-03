@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohsin Ali</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Montserrat&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <!-- Top bar -->
+    <div class="container-fluid" id="top-bar">
+      <div class="container" id="hamburger-box">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- logo -->
+            <h1 id="logo">M.Ali</h1>
+          </div>
+          <div class="col-md-8">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <!-- menu -->
+            <ul id="menu">
+              <li>
+                <span><a href="#header">Home</a></span>
+              </li>
+              <li>
+                <span><a href="#about-me">About Me</a></span>
+              </li>
+              <li>
+                <span><a href="#porftolio">Portfolio</a></span>
+              </li>
+              <li>
+                <span><a href="#contact">Contact</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header -->
+    <div class="container">
+      <div class="row section" id="header">
+        <div class="col-md-6 order-md-1 order-2" id="banner-image">
+          <img src="images/banner-image-2.png" alt="" />
+          <span id="banner-image-title"><em>Frontend</em>Developer</span>
+        </div>
+        <div class="col-md-6 order-md-2 order-1" id="banner-content">
+          <div>
+            <span id="banner-title">Mohsin Ali</span>
+            <span id="banner-tagline">Software Engineer</span>
+          </div>
+          <div id="banner-contact">
+            <span id="banner-email">mohsinalimusharaf@gmail.com</span>
+            <span id="banner-phone">+92 3078948515</span>
+          </div>
+          <div id="banner-box"></div>
+        </div>
+      </div>
+    </div>
+    <!-- about me -->
+    <div class="container">
+      <div class="row section" id="about-me">
+        <div class="col-md-12">
+          <span class="section-title-box"
+            ><em class="section-title">About Me</em></span
+          >
+        </div>
+        <div class="col-md-8">
+          <p id="section-subtitle">Frontend Developer</p>
+          <p>
+            I am dedicated and reliable, consistently working hard to achieve my
+            goals. My challenging experiences have strengthened my confidence
+            and resilience. I stay focused on the objectives I set for myself,
+            demonstrating commitment and perseverance.
+          </p>
+          <p>
+            I am passionate about continuous learning and enjoy exploring new
+            technologies. Whether it’s building user-friendly web applications
+            or solving complex problems, I approach every task with creativity
+            and attention to detail. My goal is to grow both personally and
+            professionally while contributing value to the projects I work on.
+          </p>
+        </div>
+        <div class="col-md-4" id="about-image">
+          <img src="images/banner-image-2.png" alt="" />
+        </div>
+      </div>
+      <!-- portfolio -->
+    </div>
+    <div class="container">
+      <div class="row section" id="porftolio">
+        <div class="col-md-12 text-center" id="portfolio-title">
+          <span class="section-title-box"
+            ><em class="section-title">Portfolio</em></span
+          >
+        </div>
+        <div id="projects">
+          <div class="col-md-12 project" id="project-1">
+            <span>01</span>
+            <a href="">
+              <img src="images/portfolio-card-1.png" alt="" />
+            </a>
+          </div>
+          <div class="col-md-12 project" id="project-2">
+            <span>02</span>
+            <a href="https://alexcartergraphics.netlify.app/">
+              <img src="images/portfolio-card-2.png" alt="" />
+            </a>
+          </div>
+          <div class="col-md-12 project" id="project-3">
+            <span>03</span>
+            <a href="https://flocksalepoultry.infy.uk/?i=1">
+              <img src="images/portfolio-card-3.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12 text-center" id="btn-more">
+          <a href="#">More Projects</a>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="container">
+      <div class="row section mx-auto" id="contact">
+        <div class="col-md-12 text-center">
+          <span class="section-title-box"><em class="section-title"></em></span>
+        </div>
+
+        <div class="col-lg-6">
+          <div id="contact-details">
+            <span id="contact-title">Get in touch</span>
+            <span id="contact-tagline"
+              >Our friendly team would love to hear from you.</span
+            >
+          </div>
+          <form action="mailto:mohsinalimusharaf@email.com" class="col-md-12">
+            <div class="row">
+              <div class="col-md-6">
+                <label for="first-name">First name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="first-name"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="last-name">Last name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="last-name"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="abcd@gmail.com"
+              />
+            </div>
+            <div class="col-md-12">
+              <label for="message">Message</label>
+              <textarea
+                type="message"
+                name="message"
+                id="message"
+                placeholder=""
+                rows="6"
+              ></textarea>
+            </div>
+            <div class="col-md-12">
+              <button type="submit" id="btn-submit">Send message</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 d-lg-block d-sm-none">
+          <div class="color-layer">
+            <div id="contact-image">
+              <img src="images/contactus.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        var bar1 = document.getElementsByClassName("bar")[0];
+        var bar2 = document.getElementsByClassName("bar")[1];
+        var bar3 = document.getElementsByClassName("bar")[2];
+
+        if (menu.style.display == "block") {
+          menu.style.display = "none";
+
+          bar1.style.transform = `rotate(180deg) translate(0px, 0px)`;
+          bar2.style.opacity = "1";
+          bar3.style.transform = `rotate(180deg) translate(0px, 0px)`;
+        } else {
+          menu.style.display = "block";
+
+          bar1.style.transform = `rotate(-45deg) translate(-6px, 6px)`;
+          bar2.style.opacity = "0";
+          bar3.style.transform = `rotate(45deg) translate(-6px, -6px)`;
+        }
+      }
+      var menuItems = document.querySelectorAll("#menu li a");
+      menuItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+          toggleMenu();
+        });
+      });
+    </script>
+  </body>
+</html>

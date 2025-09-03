@@ -1,0 +1,767 @@
+/* General Setting */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+body,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.section {
+  margin: 50px 0 120px 0 !important;
+}
+
+.section-title {
+  display: inline-block;
+  margin: 50px 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
+
+.section-title-box {
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  top: 30px;
+  /* background: rgba(255, 202, 2, 1); */
+  background: #007b8f;
+}
+
+#section-subtitle {
+  font-weight: 700 !important;
+}
+
+/* ********** */
+
+/* hamburger Menu*/
+.hamburger-menu {
+  display: none;
+}
+
+.bar {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* ********** */
+
+/* Top Bar */
+#top-bar {
+  border-bottom: 1px solid rgba(191, 191, 191, 1);
+  height: 73px;
+}
+
+#top-bar .row {
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  height: 75vh;
+}
+
+/* menu */
+#menu {
+  list-style: none;
+  text-align: right;
+  margin-top: 15px;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px 20px 20px 40px;
+}
+
+#menu li span {
+  position: relative;
+}
+
+#menu li a:hover:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* logo */
+#logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 8px;
+  color: #2ecc71;
+}
+
+/* ****** */
+
+/* Banner Section */
+
+#banner-image {
+  position: relative;
+  z-index: 1;
+}
+
+#banner-image::after {
+  content: "";
+  width: 425px;
+  height: 92%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  /* background-color: rgba(255, 202, 2, 1); */
+  background-color: #007b8f;
+}
+
+#banner-image img {
+  position: absolute;
+  right: 12%;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#banner-title {
+  display: block;
+  text-align: right;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+#banner-tagline {
+  text-align: right;
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#banner-email,
+#banner-phone {
+  display: block;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 400px;
+  color: rgba(128, 128, 128, 1);
+}
+
+#banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#banner-content::before {
+  content: "";
+  position: absolute;
+  overflow: hidden;
+  clear: both;
+  width: 107px;
+  height: 40px;
+  bottom: 5px;
+  right: 0;
+  /* background-color: rgba(255, 202, 2, 1); */
+  background-color: #007b8f;
+}
+
+#banner-image-title {
+  /* color: (0, 0, 0, 1); */
+  color: #2ecc71;
+
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  left: 150px;
+  z-index: 5;
+}
+
+#banner-image-title em {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 18px;
+  /* -webkit-text-stroke: 1px rgba(255, 202, 2, 1); */
+  -webkit-text-stroke: 1px #007b8f;
+}
+
+/* ****** */
+
+/* About Me Section */
+#about-me p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#about-image {
+  position: relative;
+  height: 500px;
+}
+
+#about-image img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-image::before {
+  content: "";
+  width: 590px;
+  height: 405px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  /* background: rgba(255, 202, 2, 1); */
+  background: #007b8f;
+}
+
+/* ****** */
+
+/* Portfolio Section */
+#portfolio-title {
+  margin-bottom: 90px;
+}
+.project {
+  max-width: 1200px;
+  height: 450px;
+  /* aspect-ratio: 16 / 9;   /* or 4 / 3, try both */
+  width: 100%; */
+  overflow: hidden;
+}
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 4;
+}
+
+#project-1,
+#project-2,
+#project-3 {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#project-1 span,
+#project-2 span,
+#project-3 span {
+  position: absolute;
+  bottom: 93%;
+  left: 0;
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  z-index: -1;
+  -webkit-text-stroke: 2px rgba(148, 148, 148, 1);
+}
+
+#btn-more a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 200px;
+  height: 61px;
+  /* background: rgba(255, 202, 2, 1); */
+  background-color: #007b8f;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+#btn-more a:hover {
+  background-color: #2ecc71;
+  color: #2c3e50;
+}
+
+/* ***** */
+
+/* Contact Form */
+
+form input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid rgba(208, 213, 221, 1);
+}
+
+form input::placeholder {
+  font-size: 0.9rem;
+  color: rgba(102, 112, 133, 1);
+}
+
+form label {
+  font-size: 0.9rem;
+  color: rgba(52, 64, 84, 1);
+}
+
+#contact-title {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: rgba(16, 24, 40, 1);
+  margin-bottom: 10px;
+}
+
+#contact-tagline {
+  display: block;
+  font-size: 1.2rem;
+  color: rgba(102, 112, 133, 1);
+  font-weight: 400;
+}
+
+#contact-details {
+  margin: 35px 0;
+}
+
+#btn-submit {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px;
+  width: 100%;
+  color: rgba(0, 0, 0, 1);
+  /* background-color: rgba(255, 202, 2, 1); */
+  background-color: #007b8f;
+  /* border: 1px solid rgba(255, 202, 2, 1); */
+  border: 1px solid #007b8f;
+  border-radius: 8px;
+}
+#btn-submit:hover {
+  background-color: #2ecc71;
+  color: #2c3e50;
+}
+
+
+.color-layer {
+  position: relative;
+  display: inline-block;
+  
+
+}
+
+.color-layer #contact-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.color-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+  background: rgba(0, 123, 143, 0.5); /* semi-transparent color */
+  pointer-events: none; /* don’t block clicks */
+}
+#contact-image{
+  max-width: 500px;
+}
+
+
+
+#contact-image::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  bottom: -9px;
+  right: 70%;
+  z-index: -2;
+  /* background-color: rgba(255, 202, 2, 1); */
+  background-color: #007b8f;
+}
+
+/* ********############################********* */
+
+/* #########*****Responsive Design******######## */
+
+/*  Desktops, large screens. */
+@media (max-width: 1200px) {
+  /* menu */
+  #menu li {
+    margin: 15px;
+  }
+
+  /* banner */
+  #banner-title {
+    font-size: 3.5rem;
+  }
+
+  #banner-image-title,
+  #banner-image-title em {
+    font-size: 3rem;
+  }
+
+  /* about section */
+  #about-image img {
+    width: 350px;
+    height: 800px;
+  }
+  /* portfolio */
+  .project {
+    max-width: 680px;
+    height: 450px;
+  }
+
+  /* contact section */
+  #contact-image img {
+    width: 380px;
+    height: 550px;
+  }
+
+  #contact-image::before {
+    right: 78%;
+  }
+}
+
+/* Small screens, laptops. */
+@media (max-width: 992px) {
+  /* menu */
+  #menu li {
+    margin: 10px;
+  }
+
+  #menu li a {
+    font-size: 1.25rem;
+  }
+
+  /* logo */
+  #logo {
+    font-size: 2rem;
+  }
+
+  /* banner */
+  #banner-title {
+    font-size: 2.7rem;
+  }
+
+  #banner-tagline {
+    font-size: 1.7rem;
+  }
+
+  #banner-image-title,
+  #banner-image-title em {
+    font-size: 2rem;
+  }
+
+  #banner-image::after {
+    content: "";
+    width: 337px;
+  }
+
+  #banner-image img {
+    width: 260px;
+  }
+
+  #banner-email,
+  #banner-phone {
+    font-size: 1.5rem;
+  }
+
+  /* about */
+  #about-me p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  #about-image {
+    height: 400px;
+  }
+
+  #about-image img {
+    width: 250px;
+    height: 600px;
+  }
+
+  #about-image::before {
+    width: 350px;
+    height: 325px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  /* projects */
+  #project-1 span,
+  #project-2 span,
+  #project-3 span {
+    font-size: 5rem;
+    bottom: 96%;
+  }
+  .project {
+    max-width: 600px;
+    height: 420px;
+  }
+}
+
+/* iPads, Tablets. */
+@media (max-width: 768px) {
+  /*top bar  */
+  #top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+  }
+
+  #menu {
+    display: none;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-top: 70px;
+    z-index: 9;
+    position: absolute;
+    left: 0;
+    clear: both;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgb(97, 97, 97);
+    text-align: center;
+    padding: 30px;
+    margin: 10px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* hamburger */
+  .hamburger-box {
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 90px;
+    top: 12px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* banner */
+  #banner-title {
+    font-size: 2.7rem;
+  }
+
+  #banner-image-title,
+  #banner-image-title em {
+    font-size: 2.2rem;
+  }
+
+  #banner-tagline {
+    font-size: 1.5rem;
+  }
+
+  #banner-email,
+  #banner-phone {
+    font-size: 1.2rem;
+  }
+
+  #banner-contact {
+    margin-top: 10px;
+  }
+
+  #banner-image {
+    margin-top: 100px;
+    padding: 100px;
+    left: 0%;
+    clear: both;
+  }
+
+  #banner-content {
+    padding: 80px 0 100px 0;
+    clear: both;
+  }
+
+  #banner-image img {
+    width: 250px;
+    height: 350px;
+    left: 15%;
+  }
+
+  #banner-image::after {
+    width: 80%;
+    height: 100%;
+    left: 0;
+  }
+
+  /* about me */
+  #about-me p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  #about-image {
+    display: none;
+  }
+
+  #about-me {
+    margin-top: 250px !important;
+  }
+
+  /* project */
+  #project-1 span,
+  #project-2 span,
+  #project-3 span {
+    font-size: 4rem;
+    bottom: 97%;
+  }
+  .project {
+    max-width: 600px;
+    height: 380px;
+  }
+
+  /* contact */
+  #contact-title {
+    font-size: 2rem;
+  }
+
+  #contact-tagline {
+    font-size: 1rem;
+  }
+}
+
+/* Bootstrap Extra Small. */
+@media (max-width: 576px) {
+  /* hamburger */
+  .hamburger-menu {
+    right: 30px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  /* banner */
+  #banner-title {
+    font-size: 2.3rem;
+  }
+
+  #banner-image-title {
+    /* -webkit-text-stroke: 1px rgba(255, 202, 2, 1); */
+    -webkit-text-stroke: 1px #007b8f;
+
+    font-size: 2.1rem;
+    left: 5%;
+    color: #2ecc71;
+  }
+
+  #banner-image {
+    text-align: center;
+  }
+
+  #banner-image-title em {
+    font-size: 2.1rem;
+  }
+
+  #banner-tagline {
+    font-size: 1.2rem;
+  }
+
+  #banner-email,
+  #banner-phone {
+    font-size: 1rem;
+  }
+
+  /* about me */
+  #about-me p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  /* project */
+  #project-1 span,
+  #project-2 span,
+  #project-3 span {
+    font-size: 3.5rem;
+    bottom: 98%;
+  }
+
+  /* contact */
+  #contact-image {
+    display: none;
+  }
+
+  #contact-title {
+    font-size: 1.7rem;
+  }
+
+  #contact-tagline {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile devices. */
+@media (max-width: 480px) {
+  /* hamburger */
+  .hamburger-menu {
+    right: 20px;
+  }
+
+  /* project */
+  #project-1 span,
+  #project-2 span,
+  #project-3 span {
+    position: absolute;
+    font-size: 2.5rem;
+  }
+}
+
+/*  Website Colors
+    PRIMARY
+background: rgba(255, 202, 2, 1);      
+background: rgba(255, 215, 65, 1);
+background: rgba(255, 228, 128, 1);
+background: rgba(255, 242, 192, 1);
+
+    Secondry
+background: rgba(0, 0, 0, 1);
+background: rgba(64, 64, 64, 1);
+background: rgba(128, 128, 128, 1);
+background: rgba(191, 191, 191, 1);
+
+
+*/
