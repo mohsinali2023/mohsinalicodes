@@ -226,12 +226,15 @@
           bar3.style.transform = `rotate(45deg) translate(-6px, -6px)`;
         }
       }
-      var menuItems = document.querySelectorAll("#menu li a");
-      menuItems.forEach(function (item) {
-        item.addEventListener("click", function () {
-          toggleMenu();
-        });
-      });
+     var menuItems = document.querySelectorAll("#menu li a");
+menuItems.forEach(function (item) {
+  item.addEventListener("click", function () {
+    if (window.innerWidth <= 768) { // only toggle on mobile
+      toggleMenu();
+    }
+  });
+});
+
     </script>
   </body>
 </html>
